@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="title">Discord Clickers</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/Game Icon.png">
+    <script src="index.js"></script>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" id="money" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="noSelect" id="clickdam" onclick="buyMoreClick()">50$ | Increase Click Damage</a>
+  <a class="noSelect" id="autobuy" onclick="getTimer()">200$ | Get Auto Clicks</a>
+  <a class="noSelect" id="autoupp" onclick="getTimer()">500$ | Quicker Auto Clicks</a>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <a onclick="reset()">Reset</a>
+</div>
+<div id="stats" class="stats">
+  <a class="noSelect" id="clickamm">WAIT</a>
+  <a class="noSelect" id="damageamm">WAIT</a>
+		<a href="https://discord.gg/CEjVSAU" target="_blank" class="link">Join My Discord!</a>
+</div>
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()"><img class="mainimg" src="images/money.png" width="50" height="50"></span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+    
+</head>
+<body onLoad="clickCounter()">
+    <center>
+        <h1>Discord Clickers</h1>
+
+            <h3 id="money2">Wait</h3>
+
+        <input type="image" id="mainimg" src="images/Discord.png" width="300" height="300" onclick="closeNav();clickCounter()"/>
+        <br>
+                    <h3 id="result"></h3>
+
+    </center>
+</body>
+</html>
